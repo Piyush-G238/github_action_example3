@@ -8,8 +8,8 @@ env:
   # mongodb+srv://admin:_njDhdLp.9SXFmP@cluster0.0rwnqds.mongodb.net/
   MONGODB_BD_NAME: github_actions
   MONGODB_CLUSTER_ADDRESS: cluster0.0rwnqds.mongodb.net
-  MONGODB_USERNAME: admin
-  MONGODB_PASSWORD: _njDhdLp.9SXFmP
+  MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
+  MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
   PORT: 3000
 jobs:
   test:
